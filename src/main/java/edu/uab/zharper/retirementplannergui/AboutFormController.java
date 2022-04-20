@@ -35,7 +35,7 @@ public class AboutFormController implements Initializable {
   @Override
   public void initialize(URL url, ResourceBundle rb) {
     
-      Image mlg = new Image("MLG.jpg");
+      Image mlg = new Image("snoop.gif");
         BackgroundImage myBI= new BackgroundImage(mlg, null, null, null, null);
         Background mlgBack = new Background(myBI);
         
