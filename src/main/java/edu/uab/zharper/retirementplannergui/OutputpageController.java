@@ -17,6 +17,10 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.media.AudioClip;
 
 /**
@@ -26,6 +30,8 @@ import javafx.scene.media.AudioClip;
  */
 public class OutputpageController implements Initializable {
 
+  @FXML private BorderPane bPane;
+    
   //Output text fields
   @FXML private TextField balanceTextField;
   @FXML private TextField totalInvestedTextField;
@@ -37,6 +43,12 @@ public class OutputpageController implements Initializable {
   @Override
   public void initialize(URL url, ResourceBundle rb) {
     
+      Image mlg = new Image("MLG.jpg");
+        BackgroundImage myBI= new BackgroundImage(mlg, null, null, null, null);
+        Background mlgBack = new Background(myBI);
+        
+        bPane.setBackground(mlgBack);
+      
     //Display results
     balanceTextField.setText("$" + StaticTemp.getBalance());
     totalInvestedTextField.setText("$" + StaticTemp.getDirectlyInvested());

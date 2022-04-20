@@ -16,6 +16,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.media.AudioClip;
 
 /**
@@ -25,10 +29,17 @@ import javafx.scene.media.AudioClip;
  */
 public class AboutFormController implements Initializable {
 
+    @FXML private BorderPane bPane;
+    
   /** Initializes the controller class. */
   @Override
   public void initialize(URL url, ResourceBundle rb) {
-    // TODO
+    
+      Image mlg = new Image("MLG.jpg");
+        BackgroundImage myBI= new BackgroundImage(mlg, null, null, null, null);
+        Background mlgBack = new Background(myBI);
+        
+        bPane.setBackground(mlgBack);
   }
 
   /** 

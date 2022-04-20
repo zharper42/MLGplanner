@@ -19,8 +19,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
 import javafx.scene.media.AudioClip;
-
+import javafx.scene.layout.BorderPane;
 /**
  * Input Page Controller class
  *
@@ -31,6 +34,9 @@ public class InputpageController implements Initializable {
   private final DecimalFormat numberFormat = new DecimalFormat("#.00");
   int num = 0;
 
+  //Background Pane
+  @FXML private BorderPane bPane;
+  
   //Input text fields
   @FXML private TextField initialTextField;
   @FXML private TextField monthlyTextField;
@@ -46,7 +52,12 @@ public class InputpageController implements Initializable {
   /** Initializes the controller class. */
   @Override
   public void initialize(URL url, ResourceBundle rb) {
-    // TODO
+      
+    Image mlg = new Image("MLG.jpg");
+        BackgroundImage myBI= new BackgroundImage(mlg, null, null, null, null);
+        Background mlgBack = new Background(myBI);
+        
+        bPane.setBackground(mlgBack);
 
   }
 

@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
@@ -11,7 +12,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uab.zharper.retirementplannergui.AboutFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#91c7fa" height="321.0" layoutX="37.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <BorderPane fx:id="bPane" prefHeight="480.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c99ff" height="321.0" layoutX="37.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" layoutX="150.0" layoutY="33.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="100.0" />
       <GridPane layoutX="78.0" layoutY="118.0" prefHeight="145.0" prefWidth="243.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -45,7 +48,7 @@
       <Label alignment="CENTER" layoutX="56.0" layoutY="296.0" prefHeight="17.0" prefWidth="287.0" text="Dividend is 4% on the year and is a monthly payout." />
       <Label alignment="CENTER" layoutX="99.0" layoutY="313.0" prefHeight="17.0" prefWidth="205.0" text="Inflation is 2.5% a year on average." />
       <Button layoutX="147.0" layoutY="363.0" mnemonicParsing="false" onAction="#goBackClick" prefHeight="25.0" prefWidth="107.0" text="Go Back" />
-      <Label alignment="CENTER" layoutX="157.0" layoutY="26.0" text="About">
+      <Label alignment="CENTER" layoutX="157.0" layoutY="26.0" text="About" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="30.0" />
          </font>
