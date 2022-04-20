@@ -94,28 +94,28 @@ public class InputpageController implements Initializable {
       try {
         doubleValue = Double.parseDouble((initialTextField.getText()));
       } catch (NumberFormatException a) {
-        initialInvalid.setText("Invalid Field");
+        initialInvalid.setText("Noob");
         num += 1;
       }
         
       try {
         doubleValue = Double.parseDouble((monthlyTextField.getText()));
       } catch (NumberFormatException b) {
-        monthlyInvalid.setText("Invalid Field");
+        monthlyInvalid.setText("Get no-scoped");
         num += 1;
       }
         
       try {
         doubleValue = Double.parseDouble((aprTextField.getText()));
       } catch (NumberFormatException c) {
-        aprInvalid.setText("Invalid Field");
+        aprInvalid.setText("Wombo Combo");
         num += 1;
       }
         
       try {
         intValue = Integer.parseInt((yearsTextField.getText()));
       } catch (NumberFormatException d) {
-        yearsInvalid.setText("Invalid Field");
+        yearsInvalid.setText("Git Gud, scrub");
         num += 1;
       }
       
@@ -130,13 +130,13 @@ public class InputpageController implements Initializable {
     }
       
       //Return false if any fields are labeled invalid
-      if ((initialInvalid.getText()).equals("Invalid Field"))
+      if ((initialInvalid.getText()).equals("Noob"))
           return false;
-      if ((monthlyInvalid.getText()).equals("Invalid Field"))
+      if ((monthlyInvalid.getText()).equals("Get no-scoped"))
           return false;
-      if ((aprInvalid.getText()).equals("Invalid Field"))
+      if ((aprInvalid.getText()).equals("Wombo Combo"))
           return false;
-      if ((yearsInvalid.getText()).equals("Invalid Field"))
+      if ((yearsInvalid.getText()).equals("Git Gud, scrub"))
           return false;
       
       return true;

@@ -13,7 +13,7 @@
 <AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uab.zharper.retirementplannergui.AboutFormController">
    <children>
       <BorderPane fx:id="bPane" prefHeight="480.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c99ff" height="321.0" layoutX="37.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4141" height="321.0" layoutX="37.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" layoutX="150.0" layoutY="33.0" opacity="0.70" stroke="BLACK" strokeType="INSIDE" width="100.0" />
       <GridPane layoutX="78.0" layoutY="118.0" prefHeight="145.0" prefWidth="243.0">
         <columnConstraints>

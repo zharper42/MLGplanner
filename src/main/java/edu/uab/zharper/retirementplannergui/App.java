@@ -38,6 +38,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("inputpage"), 400, 480);
         stage.setScene(scene);
         stage.show();
+        stage.setTitle("MLG Planner");
         
         Image image = new Image("scope.png");
         scene.setCursor(new ImageCursor(image));
