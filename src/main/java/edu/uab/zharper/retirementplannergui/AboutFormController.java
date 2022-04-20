@@ -46,7 +46,7 @@ public class AboutFormController implements Initializable {
         App.setRoot("outputpage");
     
     //Play audio
-    AudioClip note = new AudioClip(this.getClass().getResource("/typewriter.mp3").toString());
+    AudioClip note = new AudioClip(this.getClass().getResource("/HITMARKER.mp3").toString());
     note.play();
   }
 }
