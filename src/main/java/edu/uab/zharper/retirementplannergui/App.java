@@ -16,8 +16,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
+import javafx.scene.ImageCursor;
+import javafx.scene.image.Image;
 
 /**
  * JavaFX App
@@ -37,6 +38,10 @@ public class App extends Application {
         scene = new Scene(loadFXML("inputpage"), 400, 480);
         stage.setScene(scene);
         stage.show();
+        
+        Image image = new Image("scope.png");
+        scene.setCursor(new ImageCursor(image));
+        
     }
 
     /**
